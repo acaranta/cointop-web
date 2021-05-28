@@ -5,7 +5,11 @@ This is a Docker container to get an easy access to [CoinTop](https://cointop.sh
 
 The GUI of the application (the terminal, that is)  is accessed through a modern web browser (no installation or configuration needed on client side) or via any VNC client.
 
----
+## Docker
+this image is built on commit to :
+[acaranta/cointop-web](https://hub.docker.com/r/acaranta/cointop-web)
 
 ## Usage :
+```
 docker run -p 7681:7681 -v /etc/localtime:/etc/localtime:ro -v <yourvolumestorage>/cointop:/root/.config/cointop --rm -it acaranta/cointop-web
+```
