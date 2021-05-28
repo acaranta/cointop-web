@@ -9,6 +9,7 @@ COPY --from=src /etc/ssl/certs/ /etc/ssl/certs
 COPY --from=src /bin/cointop /bin/cointop
 COPY --from=src /root/.config/cointop/colors /root/.config/cointop/colors
 
+ENV TERM="xterm-256color"
 
 EXPOSE 7681
 WORKDIR /root
